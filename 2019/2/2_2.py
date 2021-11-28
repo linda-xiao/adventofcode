@@ -43,8 +43,4 @@ for i in input[0:len(input):4]:
 
     if input[0] == 19690720:
 
-        print(pos+1)
-        print(pos+2)
         print(100 * pos+1 + pos+2)
-
-    # else:
