@@ -1,6 +1,6 @@
 # DAY 2: Task 1
 
-input = open('2/input.txt').read().split(',')
+input = open('2019/2/input.txt').read().split(',')
 
 # Start at position 0 in list
 pos = 0
@@ -36,7 +36,7 @@ for i in input[0:len(input):4]:
 
     # Opcode 99 (finish the program)
     elif i == 99:
-        continue
+        break
 
     # Step 4 positions
     pos += 4
