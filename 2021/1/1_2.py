@@ -8,10 +8,10 @@ input.pop()
 # List of sums of threes
 sumThree = []
 
-# List of increases
-incr = []
+# Increase counter
+incr = 0
 
-# For every depth ranging from the first to the last-2
+# For every depth ranging from the first to the third last
 for depth in range(0,len(input)-2):
 
     # Append the sum of the current depth + the 2 next depths
@@ -23,8 +23,8 @@ for sum in range(1,len(sumThree)):
     # If the current sum is larger than the previous
     if int(sumThree[sum]) > int(sumThree[sum-1]):
 
-        # Append to list of increases
-        incr.append(sumThree[sum])
+        # Add one increase to the counter
+        incr += 1
 
 # Number of increases
-print(len(incr))
+print(incr)
