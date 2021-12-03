@@ -9,26 +9,29 @@ input.pop()
 position = 0
 depth = 0
 
-# For every command
+# For every line
 for command in input:
 
-    # Forward (if the letter at the first position is 'f')
-    if command[0] == 'f':
+    # Split each line in command and digit
+    command = command.split()
 
-        # Add the digit at the last position to position counter
-        position += int(command[-1])
+    # Forward
+    if command[0] == 'forward':
 
-    # Up (if the letter at the first position is 'u')
-    elif command[0] == 'u':
+        # Add the digit to position counter
+        position += int(command[1])
 
-        # Subtract the digit at the last position to depth counter
-        depth -= int(command[-1])
+    # Up
+    elif command[0] == 'up':
 
-    # Down (if the letter at the first position is 'd')
-    elif command[0] == 'd':
+        # Subtract the digit from depth counter
+        depth -= int(command[1])
 
-        # Add the digit at the last position to depth counter
-        depth += int(command[-1])
+    # Down
+    elif command[0] == 'down':
+
+        # Add the digit to depth counter
+        depth += int(command[1])
 
 # Multiply final horizontal position by final depth
 print(position * depth)

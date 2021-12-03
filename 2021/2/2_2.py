@@ -13,26 +13,29 @@ aim = 0
 # For every command
 for command in input:
 
-    # Forward
-    if command[0] == 'f':
+    # Split each line in command and digit
+    command = command.split()
 
-        # Add the digit at the last position to position counter
-        position += int(command[-1])
+    # Forward
+    if command[0] == 'forward':
+
+        # Add the digit to position counter
+        position += int(command[1])
 
         # Add the digit multiplied by the current aim
-        depth += int(command[-1]) * aim
+        depth += int(command[1]) * aim
 
     # Up
-    elif command[0] == 'u':
+    elif command[0] == 'up':
 
-        # Subtract the digit at the last position to aim counter
-        aim -= int(command[-1])
+        # Subtract the digit from aim counter
+        aim -= int(command[1])
 
     # Down
-    elif command[0] == 'd':
+    elif command[0] == 'down':
 
-        # Add the digit at the last position to aim counter
-        aim += int(command[-1])
+        # Add the digit to aim counter
+        aim += int(command[1])
 
 # Multiply final horizontal position by final depth
 print(position * depth)
