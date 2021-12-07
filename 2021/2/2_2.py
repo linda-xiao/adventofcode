@@ -1,4 +1,4 @@
-# DAY 2: Task 2
+# DAY 2: Part 2
 
 input = open('2021/2/input.txt').read().split('\n')
 
@@ -37,5 +37,7 @@ for command in input:
         # Add the digit to aim counter
         aim += int(command[1])
 
-# Multiply final horizontal position by final depth
-print(position * depth)
+# Solution
+print('Final horizontal position: ' + str(position))
+print('Final depth: ' + str(depth))
+print('Final horizontal position * final depth = ' + str(position * depth))
