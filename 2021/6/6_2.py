@@ -1,4 +1,4 @@
-# DAY 6: Task 2
+# DAY 6: Part 2
 
 input = open('2021/6/input.txt').read()
 
@@ -48,4 +48,5 @@ days = 256
 for i in range(1,days+1):
     currentCount = fishCount(currentCount,i)
 
-print(sum(currentCount))
+# Solution
+print('Number of lanternfish after ' + str(days) + ' days: ' + str(sum(currentCount)))

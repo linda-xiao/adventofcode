@@ -1,6 +1,6 @@
-# DAY 6: Task 1
+# DAY 6: Part 1
 
-input = open('2021/6/test.txt').read()
+input = open('2021/6/input.txt').read()
 
 # Split into separate internal timers
 initialState = input.split(',')
@@ -46,4 +46,5 @@ days = 80
 for i in range(1,days+1):
     currentState = internalTimer(currentState,i)
 
-print(len(currentState))
+# Solution
+print('Number of lanternfish after ' + str(days) + ' days: ' + str(len(currentState)))
