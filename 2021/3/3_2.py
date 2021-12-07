@@ -1,4 +1,4 @@
-# DAY 3: Task 2
+# DAY 3: Part 2
 
 input = open('2021/3/input.txt').read().split('\n')
 
@@ -99,5 +99,7 @@ CO2Binary = ''.join(CO2)
 oxygenDec = int(oxygenBinary,2)
 CO2Dec = int(CO2Binary,2)
 
-# Life support rating (multiply oxygen generator rating with CO2 scrubber rating)
-print(oxygenDec * CO2Dec)
+# Solution
+print('Oxygen generator rating: ' + str(oxygenDec))
+print('CO2 scrubber rating: ' + str(CO2Dec))
+print('Life support rating: ' + str(oxygenDec * CO2Dec))

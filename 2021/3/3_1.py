@@ -1,4 +1,4 @@
-# DAY 3: Task 1
+# DAY 3: Part 1
 
 input = open('2021/3/input.txt').read().split('\n')
 
@@ -47,5 +47,7 @@ epsilonBinary = ''.join(epsilonRate)
 gammaDec = int(gammaBinary,2)
 epsilonDec = int(epsilonBinary,2)
 
-# Power consumption (multiply gamma rate with epsilon rate)
-print(gammaDec * epsilonDec)
+# Solution
+print('Gamma rate: ' + str(gammaDec))
+print('Epsilon rate: ' + str(epsilonDec))
+print('Power consumption: ' + str(gammaDec * epsilonDec))
