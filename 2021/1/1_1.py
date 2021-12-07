@@ -1,4 +1,4 @@
-# DAY 1: Task 1
+# DAY 1: Part 1
 
 input = open('2021/1/input.txt').read().split('\n')
 
@@ -17,5 +17,5 @@ for depth in range(1,len(input)):
         # Add one increase to the counter
         incr += 1
 
-# Number of increases
-print(incr)
+# Solution
+print('Number of increases: ' + str(incr))

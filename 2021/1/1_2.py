@@ -1,4 +1,4 @@
-# DAY 1: Task 2
+# DAY 1: Part 2
 
 input = open('2021/1/input.txt').read().split('\n')
 
@@ -26,5 +26,5 @@ for sum in range(1,len(sumThree)):
         # Add one increase to the counter
         incr += 1
 
-# Number of increases
-print(incr)
+# Solution
+print('Number of increases: ' + str(incr))
