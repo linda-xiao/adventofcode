@@ -1,4 +1,4 @@
-# DAY 4: Task 2
+# DAY 4: Part 2
 
 input = open('2021/4/input.txt').read().split('\n')
 
@@ -113,11 +113,11 @@ for number in drawnNumbers:
         # If bingo
         if (rowBingo(bingoBoards[i]) or colBingo(bingoBoards[i])):
 
-            # If there is only one bingo board left
+            # If there is only one bingo board left, print final score and break
             if len(bingoBoards) == 1:
 
-                # Print final score and break
-                print(score(bingoBoards[i],number))
+                # Solution
+                print('Final score (last board to win): ' + str(score(bingoBoards[i],number)))
                 break
 
         # If not bingo, append the board to list of boards without bingo yet
