@@ -1,4 +1,4 @@
-# DAY 7: Task 1
+# DAY 7: Part 1
 
 input = open('2021/7/input.txt').read()
 
