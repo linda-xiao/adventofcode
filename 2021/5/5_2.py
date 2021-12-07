@@ -1,4 +1,4 @@
-# DAY 5: Task 2
+# DAY 5: Part 2
 
 input = open('2021/5/input.txt').read().split('\n')
 
@@ -111,5 +111,5 @@ for line in matrix:
         if i > 1:
             overlap += 1
 
-# Number of overlaps
-print(overlap)
+# Solution
+print('Number of overlaps: ' + str(overlap))

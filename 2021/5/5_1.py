@@ -1,4 +1,4 @@
-# DAY 5: Task 1 (super ineffective and time consuming)
+# DAY 5: Part 1 (super ineffective and time consuming)
 
 input = open('2021/5/input.txt').read().split('\n')
 
@@ -74,5 +74,5 @@ for i in coord:
 # Delete duplicates in list of only overlaps
 overlap = list(set(overlap))
 
-# Number of overlaps
-print(len(overlap))
+# Solution
+print('Number of overlaps: ' + str(len(overlap)))
